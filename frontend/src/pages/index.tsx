@@ -8,9 +8,12 @@ interface Track {
   id: string;
   name: string;
   artists: { name: string }[];
-  album: { name: string };
+  album: { 
+    name: string;
+    images: { url: string; height: number; width: number }[];
+  };
   uri: string;
-  played_at?: string;  // Add optional played_at property
+  played_at?: string;
 }
 
 export default function Home() {
