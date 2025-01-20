@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-b from-gray-900 to-gray-800 min-h-screen text-white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-green-500 rounded-full;
+}
+
+/* Date picker customization */
+.react-datepicker {
+  @apply bg-gray-800 border border-gray-700;
+}
+
+.react-datepicker__header {
+  @apply bg-gray-900 border-gray-700;
+}
+
+.react-datepicker__current-month,
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  @apply text-white;
+}
+
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  @apply bg-green-500;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range,
+.react-datepicker__month-text--selected,
+.react-datepicker__month-text--in-selecting-range,
+.react-datepicker__month-text--in-range,
+.react-datepicker__quarter-text--selected,
+.react-datepicker__quarter-text--in-selecting-range,
+.react-datepicker__quarter-text--in-range,
+.react-datepicker__year-text--selected,
+.react-datepicker__year-text--in-selecting-range,
+.react-datepicker__year-text--in-range {
+  @apply bg-green-500 text-white;
+}
+
+.react-datepicker__time-container {
+  @apply border-l border-gray-700;
+}
+
+.react-datepicker__time-container .react-datepicker__time {
+  @apply bg-gray-800;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+  @apply bg-gray-800;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list {
+  @apply bg-gray-800;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item {
+  @apply text-white hover:bg-green-500 hover:text-white;
+}
+
+.react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected {
+  @apply bg-green-500 text-white;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  @apply bg-green-500 text-white;
+}
+
+.react-datepicker__day:hover {
+  @apply bg-green-400;
+}
+
+.react-datepicker__input-container input {
+  @apply text-white bg-gray-700;
+}
