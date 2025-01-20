@@ -26,11 +26,15 @@ async def readiness_check():
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://rewindify.vercel.app"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://rewindify.vercel.app",
+        "https://www.rewindify.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    expose_headers=["*"]  # Add this line
+    expose_headers=["*"]
 )
 
 @app.get("/api/auth/url")
