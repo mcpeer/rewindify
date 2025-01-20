@@ -1,6 +1,6 @@
 # Spotify Rewindify 🎵
 
-A web application that lets you create Spotify playlists from your listening history within specific date ranges. Built entirely with [aider](https://github.com/paul-gauthier/aider) AI coding assistant for less than $2 worth of GPT-4 tokens!
+A web application that lets you create Spotify playlists from your listening history within specific date ranges. Built entirely with [aider](https://github.com/paul-gauthier/aider) AI coding assistant for less than $2 worth of Anthropic tokens!
 
 ## Features
 
