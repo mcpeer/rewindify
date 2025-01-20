@@ -10,6 +10,7 @@ interface Track {
   artists: { name: string }[];
   album: { name: string };
   uri: string;
+  played_at?: string;  // Add optional played_at property
 }
 
 export default function Home() {
