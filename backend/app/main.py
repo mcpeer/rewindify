@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Depends, Body
+from fastapi import FastAPI, HTTPException, Depends, Body, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from .spotify_client import SpotifyClient
 from .auth import get_current_user
@@ -14,6 +14,15 @@ class PlaylistCreate(BaseModel):
     track_uris: List[str]
 
 app = FastAPI()
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
+
+@app.get("/ready")
+async def readiness_check():
+    # You could add more sophisticated checks here
+    return {"status": "ready"}
 
 app.add_middleware(
     CORSMiddleware,
